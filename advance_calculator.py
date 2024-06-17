@@ -1,4 +1,5 @@
 import math
+import numpy as np
 
 # Function to add two numbers
 def add(x, y):
@@ -25,7 +26,8 @@ def percentage(x, y):
 
 # Function to calculate exponentiation
 def power(x, y):
-    return x ** y
+    result = np.power(x,y)
+    return result
 
 # Function to calculate square root
 def square_root(x):
@@ -67,7 +69,7 @@ while True:
         num2 = float(input("Enter second number: "))
 
     if choice == '1':
-        print("Result:", add(num1, num2))
+        print("Result:", add(num1,num2))
     elif choice == '2':
         print("Result:", subtract(num1, num2))
     elif choice == '3':
